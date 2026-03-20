@@ -538,6 +538,24 @@ const savedPoints = [
     tags: ["cafe", "breakfast", "brunch", "coffee"],
     coordinates: [-6.27876, 53.34775],
     description: "A great stop-off option for an Irish breakfast, a brunch, lunch, pastries, or even just coffee!"
+  },
+  {
+    name: "Docklands",
+    tags: ["river", "quay", "neighbourhood", "area", "views"],
+    coordinates: [-6.23848, 53.34328],
+    description: "A lovely area of Dublin right by the Grand Canal and the River Liffey. Packed with modern buildings, wonderful cafes and bars, and a gorgeous place to walk by the water."
+  },
+  {
+    name: "Murray's Sports Bar",
+    tags: ["bar", "pub", "sports", "casual"],
+    coordinates: [-6.26089, 53.35246],
+    description: "A great sports bar also showing traditional live Irish music and dancing."
+  },
+  {
+    name: "Andhra Bhavan",
+    tags: ["restaurant", "indian", "food", "curry"],
+    coordinates: [-6.25841, 53.35051],
+    description: "A lovely restaurant with friendly service, offering delicious South Indian cuisine. "
   }
 ];
 
@@ -578,7 +596,10 @@ const directionsLinks = {
   "John Kavanagh / The Gravediggers Pub": "https://maps.google.com/?cid=6865248296384799474",
   "Insomnia - St Stephens Green": "https://maps.google.com/?cid=13179216145820391576",
   "Stephen’s Green Shopping Centre": "https://maps.google.com/?cid=11657202380072722812",
-  "Third Space": "https://maps.google.com/?cid=2589970018846213055"
+  "Third Space": "https://maps.google.com/?cid=2589970018846213055",
+  "Docklands": "https://maps.google.com/?cid=15342066659681098435", 
+  "Murray's Sports Bar": "https://maps.google.com/?cid=10112104650971244392",
+  "Andhra Bhavan": "https://www.google.com/maps?cid=4107033076065351966"
 };
 
   const fuse = new Fuse(savedPoints, {
@@ -774,9 +795,9 @@ if (matchingPoint) {
   cafes: document.getElementById('toggle-cafes')
 };
     const layerToSourceLayer = {
-      'sightseeing': 'dubsights-0q0vgq',
-      'restaurants': 'dubrest-3duc37',
-      'bars': 'dubpubs-85zoqu',
+      'sightseeing': 'dubsights-3l0f64',
+      'restaurants': 'dubrest-b63too',
+      'bars': 'dubpubs-9gt6xj',
       'cafes': 'dubcafe-6mg9ix'
     };
     const sourceId = 'composite';
